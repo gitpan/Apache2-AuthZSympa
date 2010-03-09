@@ -1,7 +1,7 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         Apache2-AuthZSympa
-version:      0.5.0
+version:      0.4.0
 version_from: lib/Apache2/AuthZSympa.pm
 installdirs:  site
 requires:
@@ -12,11 +12,10 @@ requires:
     Apache2::Response:             0
     Apache2::SubRequest:           0
     Cache::Memcached:              0
-    Digest::MD5:                   0
     mod_perl2:                     0
     Net::LDAP:                     0
     SOAP::Lite:                    0
     Test::More:                    0
 
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+generated_by: ExtUtils::MakeMaker version 6.17

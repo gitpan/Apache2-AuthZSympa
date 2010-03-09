@@ -24,3 +24,5 @@ Revision history for Apache-AuthSympa
 	Work behind mod_cas
 0.5.0   09/05/2007
 	Shibboleth compliant
+0.5.1   09/03/2010
+        test changes

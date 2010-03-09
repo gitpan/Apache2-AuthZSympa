@@ -343,8 +343,10 @@ sub handler{
         ## verification of ldap directives
 	my $ldap_host = $r->dir_config('LDAPHost') || "";
 	if ($ldap_host eq ""){
+	    $r->log->debug("Apache2::AuthZSympa : no LDAPHost, email adress in uid ?");
 	    if ($user =~ /@/){
 		## if user is emailAddress, don't need ldap to retrieve emailadddress
+		$r->log->debug("Apache2::AuthZSympa : no need with LDAP, email adress in uid")
 		$mail_user = $user;
 	    }else{
 		$r->log_error("Apache2::AuthZSympa : no ldap_host defined for $location, can't verify registrations");

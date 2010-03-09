@@ -1,8 +1,8 @@
 use Test::More tests => 2;
 
 BEGIN {
-use_ok( 'Apache::AuthenSympa' );
-use_ok( 'Apache::AuthzSympa' );
+use_ok( 'Apache2::AuthNSympa' );
+use_ok( 'Apache2::AuthZSympa' );
 }
 
-diag( "Testing Apache::AuthenSympa $Apache::AuthenSympa::VERSION" );
+diag( "Testing Apache2::AuthZSympa $Apache::AuthZSympa::VERSION" );

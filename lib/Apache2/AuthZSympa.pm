@@ -30,11 +30,11 @@ L<http://sourcesup.cru.fr/projects/authsympa/>
 
 =head1 VERSION
 
-Version 0.5.0
+Version 0.5.2
 
 =cut
 
-our $VERSION = '0.5.0';
+our $VERSION = '0.5.2';
 =head1 SYNOPSIS
 
 This module is an authorization handler for Apache 2. Its authorization method relies on mailing lists membership ; it is designed for Sympa mailing list software (http://sympa.org). This authorization handler has been initially designed to work with its peer authentication handler Apache2::AuthNSympa that performs authentication against a Sympa SOAP server. The handler has later been extended to work with third party authentication Apache modules :
@@ -346,7 +346,7 @@ sub handler{
 	    $r->log->debug("Apache2::AuthZSympa : no LDAPHost, email adress in uid ?");
 	    if ($user =~ /@/){
 		## if user is emailAddress, don't need ldap to retrieve emailadddress
-		$r->log->debug("Apache2::AuthZSympa : no need with LDAP, email adress in uid")
+		$r->log->debug("Apache2::AuthZSympa : no need with LDAP, email adress in uid");
 		$mail_user = $user;
 	    }else{
 		$r->log_error("Apache2::AuthZSympa : no ldap_host defined for $location, can't verify registrations");

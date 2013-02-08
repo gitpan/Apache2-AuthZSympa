@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'Apache2::AuthZSympa',
-    AUTHOR              => 'Dominique Launay <dominique.launay AT cru.fr>',
+    AUTHOR              => 'Dominique Launay <dominique.launay AT renater.fr>',
     VERSION_FROM        => 'lib/Apache2/AuthZSympa.pm',
     ABSTRACT_FROM       => 'lib/Apache2/AuthZSympa.pm',
     PL_FILES            => {},
